@@ -1,0 +1,15 @@
+# Ignore files
+.venv
+.git
+./logs
+./forecasts
+./training
+./tuning
+.cache
+..vscode
+./data/**/
+./output/**
+*.log
+
+# Allow files
+# !./data/dim_holidays.csv

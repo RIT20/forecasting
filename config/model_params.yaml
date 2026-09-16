@@ -1,0 +1,27 @@
+# Cluster RunID
+cluster_run_id: null
+
+# Forecast Type Name
+forecast_type: ml-forecast
+
+# Start Data
+start_date: null
+
+# Horizon
+horizon: 6
+
+# Tune Method
+tune_method: optuna
+
+# Lags
+sales_lags: 10
+loc_count_lags: 30
+
+# Futures
+futures: 7
+
+# Number of Trails
+tuning_n_trials: 10
+
+# Number of jobs
+n_jobs: null

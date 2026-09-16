@@ -1,0 +1,20 @@
+# BaseData tables
+DimWorkUnit: "dim_work_unit"
+FctSales: "fct_sales"
+FctPrice: "fct_price"
+
+# Feature Tables
+DimHolidays: "dim_holidays"
+
+# Export Tables
+ForecastTable: "cal_forecast"
+ForecastSummaryTable: "forecast_summary_table_ml_model"
+
+# Metadata Tables
+ForecastMetaDataTable: "ml_forecast_metadata"
+
+# Dag Master Tables
+DagMasterScheduleTable: "job_scheduler_master"
+
+# DataStore configs
+use_cache: True
