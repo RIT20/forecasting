@@ -1,5 +1,6 @@
 Retail Sales Forecasting
-A pipeline that predicts how many units each product will sell, at each store, for the next few weeks. It reads past sales from Snowflake, trains a model per product category, and writes weekly forecasts to CSV.
+
+A pipeline that predicts how many units each product will sell, at each store, for the next few weeks. It reads past sales from Snowflake, trains a model per product category, and writes weekly forecasts to db.
 
 What it does
 For every product-store-channel combination, the pipeline produces a weekly sales forecast for the next H weeks (default: 4).
@@ -45,7 +46,7 @@ poetry run python driver_do.py
 Or with Docker:
 
 docker build -t sales-forecasting .
-docker run --env-file .env sales-forecasting --tenant_id WOODMAN --job_id run-wo-tuning
+docker run --env-file .env sales-forecasting --tenant_id <tenant_name> --job_id <job_to_run>
 Outputs
 prepared_data_regression/<tenant>/*.parquet.gzip — feature tables.
 tuning_regression/<tenant>/<category>/params_1.pickle — best model settings.
